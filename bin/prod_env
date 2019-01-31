@@ -8,6 +8,6 @@ cd ${REPO_ROOT_DIR}
 
 cat <<EOF
 TF_VAR_environment=prod
-AWS_ACCESS_KEY_ID=$(terraform output -state=users/tf.state prod_access_key)
-AWS_SECRET_ACCESS_KEY=$(terraform output -state=users/tf.state prod_secret_key | base64 --decode | keybase pgp decrypt)
+AWS_ACCESS_KEY_ID=$(terraform output -state=infra/users/tf.state prod_access_key)
+AWS_SECRET_ACCESS_KEY=$(terraform output -state=infra/users/tf.state prod_secret_key | base64 --decode | keybase pgp decrypt)
 EOF
