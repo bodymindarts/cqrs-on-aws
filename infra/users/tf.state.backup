@@ -1,7 +1,7 @@
 {
     "version": 3,
     "terraform_version": "0.11.11",
-    "serial": 39,
+    "serial": 67,
     "lineage": "125128a1-eed1-8de5-1167-a6542343a3a5",
     "modules": [
         {
@@ -12,30 +12,30 @@
                 "prod_access_key": {
                     "sensitive": false,
                     "type": "string",
-                    "value": "AKIAIZXN7JFORVCSYUAQ"
+                    "value": "AKIAILRQJNWYOYTEHQ3A"
                 },
                 "prod_secret_key": {
                     "sensitive": false,
                     "type": "string",
-                    "value": "wcFMA0QRuBcKyPi0ARAAUM0tDf876qiDnWthA5Kb0ige6MRs3VA3Cr/OHqvyIgzgRzOeTzAtBqA+TtErtwM4fV63zVxg4FK4XBHBXb5dDPdw6I/4I6yjbtQd4ceSmlzUdeuOmLevMuKy05t89JLAEJyqArrlkXo+fKchnReYe5lFsYKtb4ZiSqtNb9d8GGO8GYAJ8S2t+dPelQFbPfcT+6r2XJfXpC9Co7Dw6yItF+8TADW7ezFXH5vrgVI5MNaQZq4sNwAPYeJ3s4KCEn3EzKdhrn39FwU6cyYL1ka4/q5WKZshOMgdeTr+jrmDMdbk4hZUGrvgkvY8D/CiOKEub2VsppxDhqoXqx6L+zd9Y7rtM9KcA8g6iYcRT4s2OBUfIffOFqmc40DOSO6GHsauQ2IQ0tAWXZRn0hgzvnOzGeAt/hXRtPZtPICiBeFfsL3OA/WzHxlEP6J7/bprHmDGa8Ry34Nzu1at6OD9Gjaq6va3bp/qczQ49biv7uAyWMCdSUGb36qkPFPx3R2PVm5i9P9XgN4RTbd4/CVtjfDFUQiSKwV9iraqPPnGsGJ6YPvb++HE42TZ5/QCU39b7Rq1ErV/9YG0mAEcb3CjolbxRGpoESQEb/NsIFfcquqwb+THzjIva01x3+y6jbMxhgaHKKqMkqw7K8pUFKQDyIw2DqlX79akyIv9Y5hCUAxn2GfS4AHkq3bYs1cpw40DKc5+ZkvEReHcu+AK4A/hXPPgzuKrZvXJ4I7lJm4pSWndtGuAHSNAhWy5PU1djrMBXBVQffNJVzjyVKPgMuPN1e1OztzPPeBo5CIFbCvcaSRyLvD+AvXN4DriCrxrJeFvwAA="
+                    "value": "wcFMA0QRuBcKyPi0ARAAw4DANyPIyA+2yS079gRE0YiL+pnm863plaLIKdeMY/ty0anIFNpOCgZ4pzs+iMYQmrg+TA146wbkLGwMR7liZ7SKsXdV2yIKB4rBHL866u/oE59IW5DGCzupqvvp6SRNE4CsJDqcbvb+rHDMALcfr74w/uSru43ARICr3h6fGuLh8j/t47iB6GnD6SjZLCEeoakrtOmJ+FWEYrJzeh8Eb/cbBsCHhuPHWTPVYxcacHAgk9/32iS9kMwEzM9WPZq530y0RnZ1YMbQ1hjxI6cDcmbef+RVwWZcn3wh1M3y0281wWjn8nt8jJAamlhWUzSL5wxC/k7Lr+UtBy0YLDqUSrLgudfk7WI4McdJQ3O7WAJ5IiHc59unrTqMVIxcefscZvaNwbVU4xXQ+9xrDbuGwYH7i+ubAWEoakuvo0Y+LDAQI+f0BcryO4YT0a+kkWtWAmmeCckHHK833vXxuuL9lbUNY72TXg1WQtARHZip8WAko8jv2FLISGftjDtLdfmdbyZ4ODRbW+30qC/cjs7x7BaY4greaLK6lwFX8SQxys2wngaKWyA4LAzEmV3bmF8Ke6riIww81Qu+4bTSsMQ013bqRweCB6jUw3N1pdpQoGKPMCU6jtPYNyKhmN9hlWL4l1tpXdIUczPO/QBWWvdoIoypNtLORFmv3yCaw6NQ6f3S4AHkY3O9kittfof8SX7kcV3KmuHspuAk4I7harHg5+Id4X2c4D/lAC5OBWoPoIrHY9Z6ukd/Nik7DXYhMf+gep0pehvUTeLgxONQGZgBhJXN/+CD5EcaLh+oNwg7cZ7PWUM33f3iinWyweGFYQA="
                 }
             },
             "resources": {
-                "aws_iam_access_key.prod_setup_key": {
+                "aws_iam_access_key.setup_key": {
                     "type": "aws_iam_access_key",
                     "depends_on": [
-                        "aws_iam_user.prod_setup"
+                        "aws_iam_user.setup"
                     ],
                     "primary": {
-                        "id": "AKIAIZXN7JFORVCSYUAQ",
+                        "id": "AKIAILRQJNWYOYTEHQ3A",
                         "attributes": {
-                            "encrypted_secret": "wcFMA0QRuBcKyPi0ARAAUM0tDf876qiDnWthA5Kb0ige6MRs3VA3Cr/OHqvyIgzgRzOeTzAtBqA+TtErtwM4fV63zVxg4FK4XBHBXb5dDPdw6I/4I6yjbtQd4ceSmlzUdeuOmLevMuKy05t89JLAEJyqArrlkXo+fKchnReYe5lFsYKtb4ZiSqtNb9d8GGO8GYAJ8S2t+dPelQFbPfcT+6r2XJfXpC9Co7Dw6yItF+8TADW7ezFXH5vrgVI5MNaQZq4sNwAPYeJ3s4KCEn3EzKdhrn39FwU6cyYL1ka4/q5WKZshOMgdeTr+jrmDMdbk4hZUGrvgkvY8D/CiOKEub2VsppxDhqoXqx6L+zd9Y7rtM9KcA8g6iYcRT4s2OBUfIffOFqmc40DOSO6GHsauQ2IQ0tAWXZRn0hgzvnOzGeAt/hXRtPZtPICiBeFfsL3OA/WzHxlEP6J7/bprHmDGa8Ry34Nzu1at6OD9Gjaq6va3bp/qczQ49biv7uAyWMCdSUGb36qkPFPx3R2PVm5i9P9XgN4RTbd4/CVtjfDFUQiSKwV9iraqPPnGsGJ6YPvb++HE42TZ5/QCU39b7Rq1ErV/9YG0mAEcb3CjolbxRGpoESQEb/NsIFfcquqwb+THzjIva01x3+y6jbMxhgaHKKqMkqw7K8pUFKQDyIw2DqlX79akyIv9Y5hCUAxn2GfS4AHkq3bYs1cpw40DKc5+ZkvEReHcu+AK4A/hXPPgzuKrZvXJ4I7lJm4pSWndtGuAHSNAhWy5PU1djrMBXBVQffNJVzjyVKPgMuPN1e1OztzPPeBo5CIFbCvcaSRyLvD+AvXN4DriCrxrJeFvwAA=",
-                            "id": "AKIAIZXN7JFORVCSYUAQ",
+                            "encrypted_secret": "wcFMA0QRuBcKyPi0ARAAw4DANyPIyA+2yS079gRE0YiL+pnm863plaLIKdeMY/ty0anIFNpOCgZ4pzs+iMYQmrg+TA146wbkLGwMR7liZ7SKsXdV2yIKB4rBHL866u/oE59IW5DGCzupqvvp6SRNE4CsJDqcbvb+rHDMALcfr74w/uSru43ARICr3h6fGuLh8j/t47iB6GnD6SjZLCEeoakrtOmJ+FWEYrJzeh8Eb/cbBsCHhuPHWTPVYxcacHAgk9/32iS9kMwEzM9WPZq530y0RnZ1YMbQ1hjxI6cDcmbef+RVwWZcn3wh1M3y0281wWjn8nt8jJAamlhWUzSL5wxC/k7Lr+UtBy0YLDqUSrLgudfk7WI4McdJQ3O7WAJ5IiHc59unrTqMVIxcefscZvaNwbVU4xXQ+9xrDbuGwYH7i+ubAWEoakuvo0Y+LDAQI+f0BcryO4YT0a+kkWtWAmmeCckHHK833vXxuuL9lbUNY72TXg1WQtARHZip8WAko8jv2FLISGftjDtLdfmdbyZ4ODRbW+30qC/cjs7x7BaY4greaLK6lwFX8SQxys2wngaKWyA4LAzEmV3bmF8Ke6riIww81Qu+4bTSsMQ013bqRweCB6jUw3N1pdpQoGKPMCU6jtPYNyKhmN9hlWL4l1tpXdIUczPO/QBWWvdoIoypNtLORFmv3yCaw6NQ6f3S4AHkY3O9kittfof8SX7kcV3KmuHspuAk4I7harHg5+Id4X2c4D/lAC5OBWoPoIrHY9Z6ukd/Nik7DXYhMf+gep0pehvUTeLgxONQGZgBhJXN/+CD5EcaLh+oNwg7cZ7PWUM33f3iinWyweGFYQA=",
+                            "id": "AKIAILRQJNWYOYTEHQ3A",
                             "key_fingerprint": "45fa441918f2a7b83b41c1d0d3dc20b53c228603",
                             "pgp_key": "keybase:jcarter",
-                            "ses_smtp_password": "AmrA1WaR/4PuTlJTGTSGZsH4hhGeg5myEYtzumxB0C79",
+                            "ses_smtp_password": "Au6QGKXTfG6KCMtUmK9u866J+i4HagF7XZe844md97pW",
                             "status": "Active",
-                            "user": "prod_setup"
+                            "user": "PROD_setup"
                         },
                         "meta": {},
                         "tainted": false
@@ -43,18 +43,19 @@
                     "deposed": [],
                     "provider": "provider.aws"
                 },
-                "aws_iam_policy.setup_prod": {
+                "aws_iam_policy.env_all": {
                     "type": "aws_iam_policy",
                     "depends_on": [
-                        "data.aws_iam_policy_document.setup_env"
+                        "data.aws_iam_policy_document.env_policy_doc",
+                        "local.env_prefix"
                     ],
                     "primary": {
-                        "id": "arn:aws:iam::048474006546:policy/setup_prod",
+                        "id": "arn:aws:iam::048474006546:policy/PROD_all",
                         "attributes": {
-                            "arn": "arn:aws:iam::048474006546:policy/setup_prod",
+                            "arn": "arn:aws:iam::048474006546:policy/PROD_all",
                             "description": "",
-                            "id": "arn:aws:iam::048474006546:policy/setup_prod",
-                            "name": "setup_prod",
+                            "id": "arn:aws:iam::048474006546:policy/PROD_all",
+                            "name": "PROD_all",
                             "path": "/",
                             "policy": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Sid\": \"\",\n      \"Effect\": \"Allow\",\n      \"Action\": \"dynamodb:*\",\n      \"Resource\": \"arn:aws:dynamodb:*:*:table/PROD_*\"\n    },\n    {\n      \"Sid\": \"\",\n      \"Effect\": \"Allow\",\n      \"Action\": \"iam:*\",\n      \"Resource\": \"arn:aws:iam::*:role/PROD_*\"\n    },\n    {\n      \"Sid\": \"\",\n      \"Effect\": \"Allow\",\n      \"Action\": \"lambda:*\",\n      \"Resource\": \"arn:aws:lambda:*:*:function:PROD_*\"\n    }\n  ]\n}"
                         },
@@ -64,38 +65,21 @@
                     "deposed": [],
                     "provider": "provider.aws"
                 },
-                "aws_iam_user.prod_setup": {
+                "aws_iam_user.setup": {
                     "type": "aws_iam_user",
-                    "depends_on": [],
-                    "primary": {
-                        "id": "prod_setup",
-                        "attributes": {
-                            "arn": "arn:aws:iam::048474006546:user/prod_setup",
-                            "force_destroy": "false",
-                            "id": "prod_setup",
-                            "name": "prod_setup",
-                            "path": "/",
-                            "tags.%": "0",
-                            "unique_id": "AIDAIWKCOHBXWCVYFWY7O"
-                        },
-                        "meta": {},
-                        "tainted": false
-                    },
-                    "deposed": [],
-                    "provider": "provider.aws"
-                },
-                "aws_iam_user_policy_attachment.setup_prod": {
-                    "type": "aws_iam_user_policy_attachment",
                     "depends_on": [
-                        "aws_iam_policy.setup_prod",
-                        "aws_iam_user.prod_setup"
+                        "local.env_prefix"
                     ],
                     "primary": {
-                        "id": "prod_setup-20190131164542892800000001",
+                        "id": "PROD_setup",
                         "attributes": {
-                            "id": "prod_setup-20190131164542892800000001",
-                            "policy_arn": "arn:aws:iam::048474006546:policy/setup_prod",
-                            "user": "prod_setup"
+                            "arn": "arn:aws:iam::048474006546:user/PROD_setup",
+                            "force_destroy": "false",
+                            "id": "PROD_setup",
+                            "name": "PROD_setup",
+                            "path": "/",
+                            "tags.%": "0",
+                            "unique_id": "AIDAJFSBSYO3NQZZU35OS"
                         },
                         "meta": {},
                         "tainted": false
@@ -103,7 +87,26 @@
                     "deposed": [],
                     "provider": "provider.aws"
                 },
-                "data.aws_iam_policy_document.setup_env": {
+                "aws_iam_user_policy_attachment.setup_policy": {
+                    "type": "aws_iam_user_policy_attachment",
+                    "depends_on": [
+                        "aws_iam_policy.env_all",
+                        "aws_iam_user.setup"
+                    ],
+                    "primary": {
+                        "id": "PROD_setup-20190131205613804900000001",
+                        "attributes": {
+                            "id": "PROD_setup-20190131205613804900000001",
+                            "policy_arn": "arn:aws:iam::048474006546:policy/PROD_all",
+                            "user": "PROD_setup"
+                        },
+                        "meta": {},
+                        "tainted": false
+                    },
+                    "deposed": [],
+                    "provider": "provider.aws"
+                },
+                "data.aws_iam_policy_document.env_policy_doc": {
                     "type": "aws_iam_policy_document",
                     "depends_on": [
                         "local.env_prefix"

@@ -1,7 +1,7 @@
 {
     "version": 3,
     "terraform_version": "0.11.11",
-    "serial": 25,
+    "serial": 35,
     "lineage": "5501b665-5b9d-6eb8-2c54-2f245fc0cf2c",
     "modules": [
         {
@@ -68,7 +68,7 @@
                         "attributes": {
                             "arn": "arn:aws:iam::048474006546:role/PROD_fn_hello_world_role",
                             "assume_role_policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"lambda.amazonaws.com\"},\"Action\":\"sts:AssumeRole\"}]}",
-                            "create_date": "2019-01-31T16:46:11Z",
+                            "create_date": "2019-01-31T20:46:55Z",
                             "description": "",
                             "force_detach_policies": "false",
                             "id": "PROD_fn_hello_world_role",
@@ -76,7 +76,7 @@
                             "name": "PROD_fn_hello_world_role",
                             "path": "/",
                             "tags.%": "0",
-                            "unique_id": "AROAJ6O5BAMO4Z223XD24"
+                            "unique_id": "AROAIP2Q3NOPCQCZSHXTK"
                         },
                         "meta": {},
                         "tainted": false
@@ -103,7 +103,7 @@
                             "id": "PROD_hello_world",
                             "invoke_arn": "arn:aws:apigateway:eu-central-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-central-1:048474006546:function:PROD_hello_world/invocations",
                             "kms_key_arn": "",
-                            "last_modified": "2019-01-31T16:46:23.548+0000",
+                            "last_modified": "2019-01-31T20:47:12.974+0000",
                             "layers.#": "0",
                             "memory_size": "128",
                             "publish": "false",
@@ -111,7 +111,7 @@
                             "reserved_concurrent_executions": "0",
                             "role": "arn:aws:iam::048474006546:role/PROD_fn_hello_world_role",
                             "runtime": "nodejs8.10",
-                            "source_code_hash": "Ha4RZX32qf4Ss0mZAlGXvWefJ5PH50A+OSQbt0v+kiY=",
+                            "source_code_hash": "ntfx4QnlzcqfOE/ptgmHc8pfLTC1uVg7PlwW/hTjPQk=",
                             "source_code_size": "583",
                             "tags.%": "0",
                             "timeout": "3",
