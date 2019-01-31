@@ -1,7 +1,7 @@
 {
     "version": 3,
     "terraform_version": "0.11.11",
-    "serial": 9,
+    "serial": 25,
     "lineage": "5501b665-5b9d-6eb8-2c54-2f245fc0cf2c",
     "modules": [
         {
@@ -9,7 +9,158 @@
                 "root"
             ],
             "outputs": {},
-            "resources": {},
+            "resources": {
+                "aws_dynamodb_table.events": {
+                    "type": "aws_dynamodb_table",
+                    "depends_on": [
+                        "local.env_prefix"
+                    ],
+                    "primary": {
+                        "id": "PROD_EventStore",
+                        "attributes": {
+                            "arn": "arn:aws:dynamodb:eu-central-1:048474006546:table/PROD_EventStore",
+                            "attribute.#": "2",
+                            "attribute.1787777021.name": "AggregateId",
+                            "attribute.1787777021.type": "S",
+                            "attribute.1926564115.name": "EventCounter",
+                            "attribute.1926564115.type": "S",
+                            "billing_mode": "PAY_PER_REQUEST",
+                            "global_secondary_index.#": "0",
+                            "hash_key": "AggregateId",
+                            "id": "PROD_EventStore",
+                            "local_secondary_index.#": "0",
+                            "name": "PROD_EventStore",
+                            "point_in_time_recovery.#": "1",
+                            "point_in_time_recovery.0.enabled": "false",
+                            "range_key": "EventCounter",
+                            "read_capacity": "0",
+                            "server_side_encryption.#": "0",
+                            "stream_arn": "",
+                            "stream_enabled": "false",
+                            "stream_label": "",
+                            "stream_view_type": "",
+                            "tags.%": "1",
+                            "tags.Environment": "PROD",
+                            "ttl.#": "0",
+                            "write_capacity": "0"
+                        },
+                        "meta": {
+                            "e2bfb730-ecaa-11e6-8f88-34363bc7c4c0": {
+                                "create": 600000000000,
+                                "delete": 600000000000,
+                                "update": 600000000000
+                            },
+                            "schema_version": "1"
+                        },
+                        "tainted": false
+                    },
+                    "deposed": [],
+                    "provider": "provider.aws"
+                },
+                "aws_iam_role.iam_for_lambda": {
+                    "type": "aws_iam_role",
+                    "depends_on": [
+                        "data.aws_iam_policy_document.lambda_assume_role",
+                        "local.env_prefix"
+                    ],
+                    "primary": {
+                        "id": "PROD_fn_hello_world_role",
+                        "attributes": {
+                            "arn": "arn:aws:iam::048474006546:role/PROD_fn_hello_world_role",
+                            "assume_role_policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"lambda.amazonaws.com\"},\"Action\":\"sts:AssumeRole\"}]}",
+                            "create_date": "2019-01-31T16:46:11Z",
+                            "description": "",
+                            "force_detach_policies": "false",
+                            "id": "PROD_fn_hello_world_role",
+                            "max_session_duration": "3600",
+                            "name": "PROD_fn_hello_world_role",
+                            "path": "/",
+                            "tags.%": "0",
+                            "unique_id": "AROAJ6O5BAMO4Z223XD24"
+                        },
+                        "meta": {},
+                        "tainted": false
+                    },
+                    "deposed": [],
+                    "provider": "provider.aws"
+                },
+                "aws_lambda_function.hello_world": {
+                    "type": "aws_lambda_function",
+                    "depends_on": [
+                        "aws_iam_role.iam_for_lambda",
+                        "local.env_prefix"
+                    ],
+                    "primary": {
+                        "id": "PROD_hello_world",
+                        "attributes": {
+                            "arn": "arn:aws:lambda:eu-central-1:048474006546:function:PROD_hello_world",
+                            "dead_letter_config.#": "0",
+                            "description": "",
+                            "environment.#": "0",
+                            "filename": "tmp/lambda/hello_world.zip",
+                            "function_name": "PROD_hello_world",
+                            "handler": "index.handler",
+                            "id": "PROD_hello_world",
+                            "invoke_arn": "arn:aws:apigateway:eu-central-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-central-1:048474006546:function:PROD_hello_world/invocations",
+                            "kms_key_arn": "",
+                            "last_modified": "2019-01-31T16:46:23.548+0000",
+                            "layers.#": "0",
+                            "memory_size": "128",
+                            "publish": "false",
+                            "qualified_arn": "arn:aws:lambda:eu-central-1:048474006546:function:PROD_hello_world:$LATEST",
+                            "reserved_concurrent_executions": "0",
+                            "role": "arn:aws:iam::048474006546:role/PROD_fn_hello_world_role",
+                            "runtime": "nodejs8.10",
+                            "source_code_hash": "Ha4RZX32qf4Ss0mZAlGXvWefJ5PH50A+OSQbt0v+kiY=",
+                            "source_code_size": "583",
+                            "tags.%": "0",
+                            "timeout": "3",
+                            "tracing_config.#": "1",
+                            "tracing_config.0.mode": "PassThrough",
+                            "version": "$LATEST",
+                            "vpc_config.#": "0"
+                        },
+                        "meta": {
+                            "e2bfb730-ecaa-11e6-8f88-34363bc7c4c0": {
+                                "create": 600000000000
+                            }
+                        },
+                        "tainted": false
+                    },
+                    "deposed": [],
+                    "provider": "provider.aws"
+                },
+                "data.aws_iam_policy_document.lambda_assume_role": {
+                    "type": "aws_iam_policy_document",
+                    "depends_on": [],
+                    "primary": {
+                        "id": "3693445097",
+                        "attributes": {
+                            "id": "3693445097",
+                            "json": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Sid\": \"\",\n      \"Effect\": \"Allow\",\n      \"Action\": \"sts:AssumeRole\",\n      \"Principal\": {\n        \"Service\": \"lambda.amazonaws.com\"\n      }\n    }\n  ]\n}",
+                            "statement.#": "1",
+                            "statement.0.actions.#": "1",
+                            "statement.0.actions.2528466339": "sts:AssumeRole",
+                            "statement.0.condition.#": "0",
+                            "statement.0.effect": "Allow",
+                            "statement.0.not_actions.#": "0",
+                            "statement.0.not_principals.#": "0",
+                            "statement.0.not_resources.#": "0",
+                            "statement.0.principals.#": "1",
+                            "statement.0.principals.3118762561.identifiers.#": "1",
+                            "statement.0.principals.3118762561.identifiers.2638019528": "lambda.amazonaws.com",
+                            "statement.0.principals.3118762561.type": "Service",
+                            "statement.0.resources.#": "0",
+                            "statement.0.sid": "",
+                            "version": "2012-10-17"
+                        },
+                        "meta": {},
+                        "tainted": false
+                    },
+                    "deposed": [],
+                    "provider": "provider.aws"
+                }
+            },
             "depends_on": []
         }
     ]

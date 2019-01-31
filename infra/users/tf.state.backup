@@ -1,7 +1,7 @@
 {
     "version": 3,
     "terraform_version": "0.11.11",
-    "serial": 12,
+    "serial": 39,
     "lineage": "125128a1-eed1-8de5-1167-a6542343a3a5",
     "modules": [
         {
@@ -12,12 +12,12 @@
                 "prod_access_key": {
                     "sensitive": false,
                     "type": "string",
-                    "value": "AKIAJHV65P7Y4X4FAVKA"
+                    "value": "AKIAIZXN7JFORVCSYUAQ"
                 },
                 "prod_secret_key": {
                     "sensitive": false,
                     "type": "string",
-                    "value": "wcFMA0QRuBcKyPi0ARAAMXB4mouTHUMdZ+iXYyPkucWrrot5CFJqDdXyIjUJ/tnclkM6pxefocQXtsICZqqkWndAiTd+NC/qP3Qr683i0KLcfOlObbuFo9XyfCO5CK2iauiSncmZ9cG40YdytmIwcdFgZ8qd0ZKMqZpCXhVvPx25YI/20djve+f2Aa+eJF9XtP6QKmA6wkXAqScKbbs1radk+AslVrJAKumPvyR2EJX5+ceU7TtxHswx4ZnnnItxjnvOuBCyOaNXGQr1S5kqqT8L7vugvZcYx25a1crgoQjTzoiW852ajUzsTKaf6ihlhXsL3zFz1E47stuEySGeTG4V/PapOwe3+ftfN02QDKghP3elpzpUlKQpRQyhzTsVX8mxsCHe9fn788affTmal7XtQT0ppumavxeNiujMTw7pWnTMf8+6p4bbNPtaavrLOwYCqfAC5KHY/NzdNjVbRgcLsHbcbGTzQDvEBWXH6w3i/8/Y2AThBc4sQGSgd9Ye9HsFol0zYvk2bRWQ7Px+tb0qkEhMWm9PAuZ3sB03mpQiANQ0jwpxhAzYCH/pXx9gCwxfXpbOHi47gmIhSiJur6SezxeP3ygliiXCp6BEp2nyh6Usmh0caDZvmBBBN6sgb/IYK0r0hVY0tJxisrfegTI+zttvaPMg5Yn7WQ6zIQJ2Ua0gdlFo+9zRkD6gAe7S4AHkWZbEObyjp96bHHlbhbRmAuHaY+CE4Fnhl23gMuJ3d7dF4Lvl+tLyM9wvB1NtA+ueAyvKhd71QeHZOWfaK/3C3qSKCxjgTeMZI+3KtWAPp+DV5A/6pXIO4LZKOSL43s+7st/iPWJHvOED6AA="
+                    "value": "wcFMA0QRuBcKyPi0ARAAUM0tDf876qiDnWthA5Kb0ige6MRs3VA3Cr/OHqvyIgzgRzOeTzAtBqA+TtErtwM4fV63zVxg4FK4XBHBXb5dDPdw6I/4I6yjbtQd4ceSmlzUdeuOmLevMuKy05t89JLAEJyqArrlkXo+fKchnReYe5lFsYKtb4ZiSqtNb9d8GGO8GYAJ8S2t+dPelQFbPfcT+6r2XJfXpC9Co7Dw6yItF+8TADW7ezFXH5vrgVI5MNaQZq4sNwAPYeJ3s4KCEn3EzKdhrn39FwU6cyYL1ka4/q5WKZshOMgdeTr+jrmDMdbk4hZUGrvgkvY8D/CiOKEub2VsppxDhqoXqx6L+zd9Y7rtM9KcA8g6iYcRT4s2OBUfIffOFqmc40DOSO6GHsauQ2IQ0tAWXZRn0hgzvnOzGeAt/hXRtPZtPICiBeFfsL3OA/WzHxlEP6J7/bprHmDGa8Ry34Nzu1at6OD9Gjaq6va3bp/qczQ49biv7uAyWMCdSUGb36qkPFPx3R2PVm5i9P9XgN4RTbd4/CVtjfDFUQiSKwV9iraqPPnGsGJ6YPvb++HE42TZ5/QCU39b7Rq1ErV/9YG0mAEcb3CjolbxRGpoESQEb/NsIFfcquqwb+THzjIva01x3+y6jbMxhgaHKKqMkqw7K8pUFKQDyIw2DqlX79akyIv9Y5hCUAxn2GfS4AHkq3bYs1cpw40DKc5+ZkvEReHcu+AK4A/hXPPgzuKrZvXJ4I7lJm4pSWndtGuAHSNAhWy5PU1djrMBXBVQffNJVzjyVKPgMuPN1e1OztzPPeBo5CIFbCvcaSRyLvD+AvXN4DriCrxrJeFvwAA="
                 }
             },
             "resources": {
@@ -27,15 +27,15 @@
                         "aws_iam_user.prod_setup"
                     ],
                     "primary": {
-                        "id": "AKIAJHV65P7Y4X4FAVKA",
+                        "id": "AKIAIZXN7JFORVCSYUAQ",
                         "attributes": {
-                            "encrypted_secret": "wcFMA0QRuBcKyPi0ARAAMXB4mouTHUMdZ+iXYyPkucWrrot5CFJqDdXyIjUJ/tnclkM6pxefocQXtsICZqqkWndAiTd+NC/qP3Qr683i0KLcfOlObbuFo9XyfCO5CK2iauiSncmZ9cG40YdytmIwcdFgZ8qd0ZKMqZpCXhVvPx25YI/20djve+f2Aa+eJF9XtP6QKmA6wkXAqScKbbs1radk+AslVrJAKumPvyR2EJX5+ceU7TtxHswx4ZnnnItxjnvOuBCyOaNXGQr1S5kqqT8L7vugvZcYx25a1crgoQjTzoiW852ajUzsTKaf6ihlhXsL3zFz1E47stuEySGeTG4V/PapOwe3+ftfN02QDKghP3elpzpUlKQpRQyhzTsVX8mxsCHe9fn788affTmal7XtQT0ppumavxeNiujMTw7pWnTMf8+6p4bbNPtaavrLOwYCqfAC5KHY/NzdNjVbRgcLsHbcbGTzQDvEBWXH6w3i/8/Y2AThBc4sQGSgd9Ye9HsFol0zYvk2bRWQ7Px+tb0qkEhMWm9PAuZ3sB03mpQiANQ0jwpxhAzYCH/pXx9gCwxfXpbOHi47gmIhSiJur6SezxeP3ygliiXCp6BEp2nyh6Usmh0caDZvmBBBN6sgb/IYK0r0hVY0tJxisrfegTI+zttvaPMg5Yn7WQ6zIQJ2Ua0gdlFo+9zRkD6gAe7S4AHkWZbEObyjp96bHHlbhbRmAuHaY+CE4Fnhl23gMuJ3d7dF4Lvl+tLyM9wvB1NtA+ueAyvKhd71QeHZOWfaK/3C3qSKCxjgTeMZI+3KtWAPp+DV5A/6pXIO4LZKOSL43s+7st/iPWJHvOED6AA=",
-                            "id": "AKIAJHV65P7Y4X4FAVKA",
+                            "encrypted_secret": "wcFMA0QRuBcKyPi0ARAAUM0tDf876qiDnWthA5Kb0ige6MRs3VA3Cr/OHqvyIgzgRzOeTzAtBqA+TtErtwM4fV63zVxg4FK4XBHBXb5dDPdw6I/4I6yjbtQd4ceSmlzUdeuOmLevMuKy05t89JLAEJyqArrlkXo+fKchnReYe5lFsYKtb4ZiSqtNb9d8GGO8GYAJ8S2t+dPelQFbPfcT+6r2XJfXpC9Co7Dw6yItF+8TADW7ezFXH5vrgVI5MNaQZq4sNwAPYeJ3s4KCEn3EzKdhrn39FwU6cyYL1ka4/q5WKZshOMgdeTr+jrmDMdbk4hZUGrvgkvY8D/CiOKEub2VsppxDhqoXqx6L+zd9Y7rtM9KcA8g6iYcRT4s2OBUfIffOFqmc40DOSO6GHsauQ2IQ0tAWXZRn0hgzvnOzGeAt/hXRtPZtPICiBeFfsL3OA/WzHxlEP6J7/bprHmDGa8Ry34Nzu1at6OD9Gjaq6va3bp/qczQ49biv7uAyWMCdSUGb36qkPFPx3R2PVm5i9P9XgN4RTbd4/CVtjfDFUQiSKwV9iraqPPnGsGJ6YPvb++HE42TZ5/QCU39b7Rq1ErV/9YG0mAEcb3CjolbxRGpoESQEb/NsIFfcquqwb+THzjIva01x3+y6jbMxhgaHKKqMkqw7K8pUFKQDyIw2DqlX79akyIv9Y5hCUAxn2GfS4AHkq3bYs1cpw40DKc5+ZkvEReHcu+AK4A/hXPPgzuKrZvXJ4I7lJm4pSWndtGuAHSNAhWy5PU1djrMBXBVQffNJVzjyVKPgMuPN1e1OztzPPeBo5CIFbCvcaSRyLvD+AvXN4DriCrxrJeFvwAA=",
+                            "id": "AKIAIZXN7JFORVCSYUAQ",
                             "key_fingerprint": "45fa441918f2a7b83b41c1d0d3dc20b53c228603",
                             "pgp_key": "keybase:jcarter",
-                            "ses_smtp_password": "AjzRr3FXuto4aaAIKRYEBrAicsR2/DSZxOQdF8B6f67i",
+                            "ses_smtp_password": "AmrA1WaR/4PuTlJTGTSGZsH4hhGeg5myEYtzumxB0C79",
                             "status": "Active",
-                            "user": "prod-setup"
+                            "user": "prod_setup"
                         },
                         "meta": {},
                         "tainted": false
@@ -43,20 +43,20 @@
                     "deposed": [],
                     "provider": "provider.aws"
                 },
-                "aws_iam_policy.create_dynamodb": {
+                "aws_iam_policy.setup_prod": {
                     "type": "aws_iam_policy",
                     "depends_on": [
-                        "data.aws_iam_policy_document.create_dynamodb_json"
+                        "data.aws_iam_policy_document.setup_env"
                     ],
                     "primary": {
-                        "id": "arn:aws:iam::048474006546:policy/create-dynamodb",
+                        "id": "arn:aws:iam::048474006546:policy/setup_prod",
                         "attributes": {
-                            "arn": "arn:aws:iam::048474006546:policy/create-dynamodb",
+                            "arn": "arn:aws:iam::048474006546:policy/setup_prod",
                             "description": "",
-                            "id": "arn:aws:iam::048474006546:policy/create-dynamodb",
-                            "name": "create-dynamodb",
+                            "id": "arn:aws:iam::048474006546:policy/setup_prod",
+                            "name": "setup_prod",
                             "path": "/",
-                            "policy": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Sid\": \"\",\n      \"Effect\": \"Allow\",\n      \"Action\": \"dynamodb:*\",\n      \"Resource\": \"*\"\n    }\n  ]\n}"
+                            "policy": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Sid\": \"\",\n      \"Effect\": \"Allow\",\n      \"Action\": \"dynamodb:*\",\n      \"Resource\": \"arn:aws:dynamodb:*:*:table/PROD_*\"\n    },\n    {\n      \"Sid\": \"\",\n      \"Effect\": \"Allow\",\n      \"Action\": \"iam:*\",\n      \"Resource\": \"arn:aws:iam::*:role/PROD_*\"\n    },\n    {\n      \"Sid\": \"\",\n      \"Effect\": \"Allow\",\n      \"Action\": \"lambda:*\",\n      \"Resource\": \"arn:aws:lambda:*:*:function:PROD_*\"\n    }\n  ]\n}"
                         },
                         "meta": {},
                         "tainted": false
@@ -68,15 +68,15 @@
                     "type": "aws_iam_user",
                     "depends_on": [],
                     "primary": {
-                        "id": "prod-setup",
+                        "id": "prod_setup",
                         "attributes": {
-                            "arn": "arn:aws:iam::048474006546:user/prod-setup",
+                            "arn": "arn:aws:iam::048474006546:user/prod_setup",
                             "force_destroy": "false",
-                            "id": "prod-setup",
-                            "name": "prod-setup",
+                            "id": "prod_setup",
+                            "name": "prod_setup",
                             "path": "/",
                             "tags.%": "0",
-                            "unique_id": "AIDAJVPLEXWCUATYF2HD4"
+                            "unique_id": "AIDAIWKCOHBXWCVYFWY7O"
                         },
                         "meta": {},
                         "tainted": false
@@ -84,18 +84,18 @@
                     "deposed": [],
                     "provider": "provider.aws"
                 },
-                "aws_iam_user_policy_attachment.prod_create_dynamodb": {
+                "aws_iam_user_policy_attachment.setup_prod": {
                     "type": "aws_iam_user_policy_attachment",
                     "depends_on": [
-                        "aws_iam_policy.create_dynamodb",
+                        "aws_iam_policy.setup_prod",
                         "aws_iam_user.prod_setup"
                     ],
                     "primary": {
-                        "id": "prod-setup-20190131064439959900000001",
+                        "id": "prod_setup-20190131164542892800000001",
                         "attributes": {
-                            "id": "prod-setup-20190131064439959900000001",
-                            "policy_arn": "arn:aws:iam::048474006546:policy/create-dynamodb",
-                            "user": "prod-setup"
+                            "id": "prod_setup-20190131164542892800000001",
+                            "policy_arn": "arn:aws:iam::048474006546:policy/setup_prod",
+                            "user": "prod_setup"
                         },
                         "meta": {},
                         "tainted": false
@@ -103,15 +103,17 @@
                     "deposed": [],
                     "provider": "provider.aws"
                 },
-                "data.aws_iam_policy_document.create_dynamodb_json": {
+                "data.aws_iam_policy_document.setup_env": {
                     "type": "aws_iam_policy_document",
-                    "depends_on": [],
+                    "depends_on": [
+                        "local.env_prefix"
+                    ],
                     "primary": {
-                        "id": "1062318715",
+                        "id": "3498336928",
                         "attributes": {
-                            "id": "1062318715",
-                            "json": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Sid\": \"\",\n      \"Effect\": \"Allow\",\n      \"Action\": \"dynamodb:*\",\n      \"Resource\": \"*\"\n    }\n  ]\n}",
-                            "statement.#": "1",
+                            "id": "3498336928",
+                            "json": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Sid\": \"\",\n      \"Effect\": \"Allow\",\n      \"Action\": \"dynamodb:*\",\n      \"Resource\": \"arn:aws:dynamodb:*:*:table/PROD_*\"\n    },\n    {\n      \"Sid\": \"\",\n      \"Effect\": \"Allow\",\n      \"Action\": \"iam:*\",\n      \"Resource\": \"arn:aws:iam::*:role/PROD_*\"\n    },\n    {\n      \"Sid\": \"\",\n      \"Effect\": \"Allow\",\n      \"Action\": \"lambda:*\",\n      \"Resource\": \"arn:aws:lambda:*:*:function:PROD_*\"\n    }\n  ]\n}",
+                            "statement.#": "3",
                             "statement.0.actions.#": "1",
                             "statement.0.actions.284441586": "dynamodb:*",
                             "statement.0.condition.#": "0",
@@ -121,8 +123,30 @@
                             "statement.0.not_resources.#": "0",
                             "statement.0.principals.#": "0",
                             "statement.0.resources.#": "1",
-                            "statement.0.resources.2679715827": "*",
+                            "statement.0.resources.3326304436": "arn:aws:dynamodb:*:*:table/PROD_*",
                             "statement.0.sid": "",
+                            "statement.1.actions.#": "1",
+                            "statement.1.actions.79416152": "iam:*",
+                            "statement.1.condition.#": "0",
+                            "statement.1.effect": "Allow",
+                            "statement.1.not_actions.#": "0",
+                            "statement.1.not_principals.#": "0",
+                            "statement.1.not_resources.#": "0",
+                            "statement.1.principals.#": "0",
+                            "statement.1.resources.#": "1",
+                            "statement.1.resources.120919817": "arn:aws:iam::*:role/PROD_*",
+                            "statement.1.sid": "",
+                            "statement.2.actions.#": "1",
+                            "statement.2.actions.4160111086": "lambda:*",
+                            "statement.2.condition.#": "0",
+                            "statement.2.effect": "Allow",
+                            "statement.2.not_actions.#": "0",
+                            "statement.2.not_principals.#": "0",
+                            "statement.2.not_resources.#": "0",
+                            "statement.2.principals.#": "0",
+                            "statement.2.resources.#": "1",
+                            "statement.2.resources.2092958868": "arn:aws:lambda:*:*:function:PROD_*",
+                            "statement.2.sid": "",
                             "version": "2012-10-17"
                         },
                         "meta": {},

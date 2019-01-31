@@ -7,7 +7,7 @@ REPO_ROOT_DIR="$(dirname $( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && 
 cd ${REPO_ROOT_DIR}
 
 cat <<EOF
-TF_VAR_environment=prod
+TF_VAR_environment=PROD
 AWS_ACCESS_KEY_ID=$(terraform output -state=infra/users/tf.state prod_access_key)
 AWS_SECRET_ACCESS_KEY=$(terraform output -state=infra/users/tf.state prod_secret_key | base64 --decode | keybase pgp decrypt)
 EOF

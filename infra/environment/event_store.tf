@@ -1,8 +1,8 @@
 resource "aws_dynamodb_table" "events" {
-  name           = "EventStore"
-  billing_mode   = "PAY_PER_REQUEST"
-  hash_key       = "AggregateId"
-  range_key      = "EventCounter"
+  name         = "${local.env_prefix}EventStore"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "AggregateId"
+  range_key    = "EventCounter"
 
   attribute {
     name = "AggregateId"
@@ -15,7 +15,6 @@ resource "aws_dynamodb_table" "events" {
   }
 
   tags = {
-    Name        = "events"
     Environment = "${var.environment}"
   }
 }
