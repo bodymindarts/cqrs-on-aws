@@ -1,3 +1,5 @@
+variable "keybase_account" { default = "jcarter" }
+
 provider "aws" {
   region = "eu-central-1"
 }
@@ -29,7 +31,7 @@ resource "aws_iam_user_policy_attachment" "prod_create_dynamodb" {
 
 resource "aws_iam_access_key" "prod_setup_key" {
   user    = "${aws_iam_user.prod_setup.name}"
-  pgp_key = "keybase:jcarter"
+  pgp_key = "keybase:${var.keybase_account}"
 }
 
 output "prod_access_key" {
